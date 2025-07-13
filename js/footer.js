@@ -18,10 +18,10 @@ setTimeout(() => {
             <a href="https://www.youtube.com/@Opentale-game" class="social-icon" title="YouTube" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-youtube"></i>
             </a>
-            <a href="https://www.instagram.com/open.tale/" class="social-icon" title="Instagram" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/opentale_game/" class="social-icon" title="Instagram" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://x.com/Open_Tale" class="social-icon" title="X (Twitter)" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/Opentale_game" class="social-icon" title="X (Twitter)" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-x-twitter"></i>
             </a>
             <a href="https://www.reddit.com/r/OpenTale/" class="social-icon" title="Reddit" target="_blank" rel="noopener noreferrer">
