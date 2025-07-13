@@ -1,4 +1,88 @@
-<p style="max-width: 650px; margin: 0 auto 30px;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="js/template.js"></script>
+</head>
+<body>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="https://i.imgur.com/uRpVTcm.png" alt="OpenTale Logo" class="hero-logo" />
+      <h1>Welcome to <span style="color:#c79bff;">OpenTale</span></h1>
+      <p>An future open-source sandbox adventure inspired by Hytale.</p>
+      <div class="cta-buttons">
+        <a href="https://github.com/Opentale-Project/Opentale" class="btn" target="_blank" rel="noopener noreferrer">⭐ GitHub</a>
+        <a href="https://discord.gg/9cxjhbfp24" class="btn" target="_blank" rel="noopener noreferrer">💬 Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="developers" style="background: #1a0933;">
+    <h2>We need developers!</h2>
+    <p style="max-width: 650px; margin: 0 auto 30px;">
       Are you a game developer, artist, modder or just love Hytale's vision? Join us!
       OpenTale is looking for passionate creators to shape this spiritual successor.
-</p>
+    </p>
+    <div class="cta-buttons">
+      <a href="https://github.com/Opentale-Project/Opentale" class="btn" target="_blank" rel="noopener noreferrer">Contribute on GitHub</a>
+      <a href="https://discord.gg/9cxjhbfp24" class="btn" target="_blank" rel="noopener noreferrer">Join our Discord</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>What is OpenTale?</h2>
+    <p style="max-width: 700px; margin: 20px auto 50px;">
+      OpenTale is a future community-driven, open-source game inspired by the spirit of Hytale.
+      Dive into a voxel-based sandbox world where creativity, adventure and modding possibilities are endless.
+    </p>
+    
+    <div class="features">
+      <div class="feature">
+        <h3>🏗️ Building</h3>
+        <p>Create amazing structures with our advanced building system. From simple houses to complex castles.</p>
+      </div>
+      <div class="feature">
+        <h3>🎨 Creativity</h3>
+        <p>Unleash your imagination with extensive modding support, custom textures, and unlimited creative possibilities.</p>
+      </div>
+      <div class="feature">
+        <h3>🌍 Deep World</h3>
+        <p>Explore a vast, procedurally generated world with diverse biomes, hidden secrets, and endless adventures.</p>
+      </div>
+      <div class="feature">
+        <h3>⚔️ Adventure</h3>
+        <p>Embark on epic quests, fight monsters, and discover the mysteries of the OpenTale universe.</p>
+      </div>
+      <div class="feature">
+        <h3>👥 Community</h3>
+        <p>Join our open-source community. Contribute to development and shape the future of the game.</p>
+      </div>
+      <div class="feature">
+        <h3>🔧 Open Source</h3>
+        <p>Fully open-source development with transparent progress and community-driven features.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="whats-new" style="background: #1a0933;">
+    <h2>What's New</h2>
+    <p style="max-width: 700px; margin: 20px auto 50px;">
+      Stay up to date with our latest development updates and announcements.
+    </p>
+    
+    <div id="latest-posts" style="max-width: 1200px; margin: 0 auto;">
+      <div id="loading-posts" style="text-align: center; padding: 40px;">
+        <p>Loading latest updates...</p>
+      </div>
+      
+      <div id="posts-grid" style="display: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+      </div>
+    </div>
+    
+    <div style="margin-top: 40px;">
+      <a href="devlog/index.html" class="btn">View All Updates</a>
+    </div>
+  </section>
+
+  <script src="js/latest-posts.js"></script>
+</body>
+</html>

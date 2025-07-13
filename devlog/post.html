@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="../js/template.js"></script>
+</head>
+<body>
+  <section class="hero" style="height: 40vh;">
+    <div class="hero-content">
+      <h1><span style="color:#c79bff;">Development</span> Blog</h1>
+      <a href="index.html" style="color: #a676ff; text-decoration: none;">← Back to Overview</a>
+    </div>
+  </section>
+
+  <section id="post-content" style="max-width: 900px; margin: 0 auto; text-align: left;">
+    <div id="loading" style="text-align: center; padding: 40px;">
+      <p>Loading post...</p>
+    </div>
+    
+    <div id="post-details" style="display: none;">
+      <!-- Post content will be loaded here -->
+    </div>
+    
+    <div id="error" style="text-align: center; padding: 40px; display: none;">
+      <p>Post could not be loaded.</p>
+      <a href="index.html" class="btn" style="margin-top: 20px;">Back to Overview</a>
+    </div>
+  </section>
+
+  <script src="post.js"></script>
+</body>
+</html>

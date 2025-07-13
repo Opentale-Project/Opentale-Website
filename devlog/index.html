@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="../js/template.js"></script>
+  <style>
+    select {
+      background-color: rgba(78, 43, 141, 0.4) !important;
+      color: #ffffff !important;
+    }
+    
+    select option {
+      background-color: #120722 !important;
+      color: #ffffff !important;
+      padding: 8px 12px;
+    }
+    
+    select option:hover,
+    select option:focus {
+      background-color: #a676ff !important;
+      color: #ffffff !important;
+    }
+    
+    select option:checked,
+    select option[selected] {
+      background-color: #a676ff !important;
+      color: #ffffff !important;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero" style="height: 60vh;">
+    <div class="hero-content">
+      <h1><span style="color:#c79bff;">Development</span> Blog</h1>
+      <p>Follow our journey as we build OpenTale</p>
+    </div>
+  </section>
+
+  <section id="devlog-content" style="padding: 40px 20px;">
+    <div class="devlog-layout" style="
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 40px;
+      align-items: flex-start;
+    ">
+      <!-- Main content -->
+      <div class="main-content" style="flex: 1; min-width: 0; display: flex; justify-content: center;">
+        <div style="width: 100%; max-width: 700px;">
+          <div id="loading" style="text-align: center; padding: 40px;">
+            <p>Loading development updates...</p>
+          </div>
+          
+          <div id="blog-posts" style="display: none;">
+            <!-- Blog posts will be loaded here -->
+          </div>
+          
+          <div id="error" style="text-align: center; padding: 40px; display: none;">
+            <p>Could not load blog posts. Please try again later.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Filter -->
+      <div class="sidebar" style="
+        width: 280px;
+        min-width: 280px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid #4e2b8d;
+        border-radius: 15px;
+        padding: 25px;
+        position: sticky;
+        top: 120px;
+        box-sizing: border-box;
+      ">
+        <h3 style="color: #c79bff; margin: 0 0 20px 0; font-size: 1.2em;">Filter</h3>
+        
+        <div style="margin-bottom: 20px;">
+          <label style="color: #ddd; font-weight: bold; display: block; margin-bottom: 8px;">Year</label>
+          <select id="yearSelect" style="
+            width: 100%;
+            background: linear-gradient(145deg, rgba(78, 43, 141, 0.4), rgba(167, 118, 255, 0.2));
+            border: 2px solid rgba(167, 118, 255, 0.5);
+            border-radius: 8px;
+            padding: 12px 15px;
+            color: #fff;
+            font-size: 0.9em;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 4 5\"><path fill=\"%23c79bff\" d=\"M2 0L0 2h4L2 0zM2 5L0 3h4L2 5z\"/></svg>');
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 12px;
+            padding-right: 35px;
+          " onmouseover="this.style.borderColor='#c79bff'; this.style.background='linear-gradient(145deg, rgba(78, 43, 141, 0.6), rgba(167, 118, 255, 0.3))'" onmouseout="this.style.borderColor='rgba(167, 118, 255, 0.5)'; this.style.background='linear-gradient(145deg, rgba(78, 43, 141, 0.4), rgba(167, 118, 255, 0.2))'">
+            <option value="">All Years</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+          <label style="color: #ddd; font-weight: bold; display: block; margin-bottom: 8px;">Author</label>
+          <select id="authorSelect" style="
+            width: 100%;
+            background: linear-gradient(145deg, rgba(78, 43, 141, 0.4), rgba(167, 118, 255, 0.2));
+            border: 2px solid rgba(167, 118, 255, 0.5);
+            border-radius: 8px;
+            padding: 12px 15px;
+            color: #fff;
+            font-size: 0.9em;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 4 5\"><path fill=\"%23c79bff\" d=\"M2 0L0 2h4L2 0zM2 5L0 3h4L2 5z\"/></svg>');
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 12px;
+            padding-right: 35px;
+          " onmouseover="this.style.borderColor='#c79bff'; this.style.background='linear-gradient(145deg, rgba(78, 43, 141, 0.6), rgba(167, 118, 255, 0.3))'" onmouseout="this.style.borderColor='rgba(167, 118, 255, 0.5)'; this.style.background='linear-gradient(145deg, rgba(78, 43, 141, 0.4), rgba(167, 118, 255, 0.2))'">
+            <option value="">All Authors</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+          <label style="color: #ddd; font-weight: bold; display: block; margin-bottom: 8px;">Category</label>
+          <select id="categorySelect" style="
+            width: 100%;
+            background: linear-gradient(145deg, rgba(78, 43, 141, 0.4), rgba(167, 118, 255, 0.2));
+            border: 2px solid rgba(167, 118, 255, 0.5);
+            border-radius: 8px;
+            padding: 12px 15px;
+            color: #fff;
+            font-size: 0.9em;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 4 5\"><path fill=\"%23c79bff\" d=\"M2 0L0 2h4L2 0zM2 5L0 3h4L2 5z\"/></svg>');
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 12px;
+            padding-right: 35px;
+          " onmouseover="this.style.borderColor='#c79bff'; this.style.background='linear-gradient(145deg, rgba(78, 43, 141, 0.6), rgba(167, 118, 255, 0.3))'" onmouseout="this.style.borderColor='rgba(167, 118, 255, 0.5)'; this.style.background='linear-gradient(145deg, rgba(78, 43, 141, 0.4), rgba(167, 118, 255, 0.2))'">
+            <option value="">All Categories</option>
+          </select>
+        </div>
+
+        <div style="border-top: 1px solid #4e2b8d; padding-top: 15px; margin-top: 15px;">
+          <p style="color: #aaa; font-size: 0.8em; margin: 0;">
+            <span id="post-count">0 posts</span>
+          </p>
+          <button id="clearFilters" style="
+            background: var(--primary-purple);
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            color: white;
+            font-size: 0.8em;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+            transition: background 0.3s;
+          " onmouseover="this.style.background='#c79bff'" onmouseout="this.style.background='#a676ff'">
+            Clear All Filters
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="devlog.js"></script>
+</body>
+</html>

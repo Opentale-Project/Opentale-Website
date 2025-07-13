@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Welcome to OpenTale!",
+      "date": "2025-07-10",
+      "author": "OpenTale Team",
+      "excerpt": "What OpenTale is, why we started it, and how you can join us.",
+      "content": "Hey everyone, and welcome to OpenTale! 👋<br><br>We’re a small team of indie devs, pixel artists, and game nerds who came together to create something special: a game inspired by Hytale, but built from scratch — open-source and community-driven.<br><br>OpenTale is more than just a hobby — it's our passion project. We’re building a beautiful pixel-style world with deep gameplay, custom modding support, and a strong focus on multiplayer fun. Whether you're into coding, designing, building or just playing — there's a place for you here.<br><br><a href='https://discord.gg/opentale' target='_blank'>Join our Discord</a> to hang out, contribute, or get early updates!<br><br>This is just the beginning. Let’s build it together! 💜",
+      "tags": ["community", "announcement", "welcome"]
+    },
+    {
+      "id": 2,
+      "title": "Engine Reveal: Bevy + Rust",
+      "date": "2025-07-10",
+      "author": "Tech Team",
+      "excerpt": "Why we use Bevy and Rust — and what it means for OpenTale.",
+      "content": "<img src='https://bevyengine.org/assets/bevy_logo_fill.png' alt='Bevy Engine' style='width: 100%; border-radius: 8px; margin: 15px 0'>Let’s talk engines. After trying several tools and frameworks, we’ve chosen <strong>Bevy</strong>, a modern game engine written in <strong>Rust</strong> — and we absolutely love it.<br><br><strong>Why Bevy?</strong><br>• Built on ECS (Entity-Component-System)<br>• Fast, safe, and modern thanks to Rust<br>• Clean code, active community, cross-platform<br><br>We're building OpenTale’s systems on top of Bevy's architecture — including world generation, multiplayer support, and modding tools. It gives us the flexibility and power we need without reinventing the wheel.<br><br>Stay tuned for our first devlogs, videos and builds!",
+      "tags": ["engine", "bevy", "rust", "development"]
+    },
+    {
+      "id": 3,
+      "title": "The Vision Behind OpenTale",
+      "date": "2025-07-10",
+      "author": "OpenTale Team",
+      "excerpt": "Our inspirations, ideas, and what OpenTale wants to become.",
+      "content": "<img src='https://i.imgur.com/6UqPFIP.png' alt='OpenTale Vision' style='width: 100%; border-radius: 8px; margin: 15px 0'>So what *is* OpenTale, really?<br><br>It’s not just a clone. OpenTale is our tribute to the sandbox RPG genre — inspired by games like Hytale, Minecraft, and Cube World, but built to stand on its own.<br><br><strong>Our goals:</strong><br>• A world full of biomes, dungeons, magic and secrets<br>• A home for builders, adventurers, modders and storytellers<br>• 100% community-first — no pay-to-win, no hidden traps<br><br>Think of it as a living, breathing project shaped by everyone involved — including you.<br><br>We’re still early, but the journey has begun. Thanks for being part of it 💫",
+      "tags": ["vision", "future", "goals", "community"]
+    }
+  ]
+}
