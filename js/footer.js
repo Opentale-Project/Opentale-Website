@@ -12,7 +12,7 @@ setTimeout(() => {
             <a href="https://github.com/Opentale-Project/Opentale" class="social-icon" title="GitHub" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-github"></i>
             </a>
-            <a href="https://discord.gg/9cxjhbfp24" class="social-icon" title="Discord" target="_blank" rel="noopener noreferrer">
+            <a href="https://discord.gg/Auttze5Nhg" class="social-icon" title="Discord" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-discord"></i>
             </a>
             <a href="https://www.youtube.com/@Opentale-game" class="social-icon" title="YouTube" target="_blank" rel="noopener noreferrer">
